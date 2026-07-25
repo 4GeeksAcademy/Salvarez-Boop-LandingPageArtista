@@ -3,6 +3,19 @@ Quiero que generes **solo código**, sin explicaciones, usando **sintaxis Markdo
 
 ---
 
+## CONTEXTO DEL SITIO WEB
+
+Tras conversar con el cliente, se acordó crear una **landing page de una sola página**, con las siguientes características:
+
+- Una **barra de navegación** con enlaces a las secciones principales: **Sobre mí**, **Trayectoria**, **Próximas presentaciones**.
+- Una **sección inicial tipo portada (Hero)** que dé la bienvenida al visitante.
+- Cada sección debe ocupar **aproximadamente el alto completo de la pantalla del computador**, como si cada bloque fuera una “pantalla” independiente.
+- El diseño debe ser **claro, moderno, accesible y fácil de navegar**.
+
+Este contexto debe guiar toda la generación del código del sitio.
+
+---
+
 ## INSTRUCCIONES GENERALES
 
 Genera:
@@ -15,19 +28,29 @@ Genera:
 - Diseño responsivo básico.
 - Código **minimalista**, sin frameworks ni JavaScript.
 
-### ✔️ Reglas de CSS
+---
+
+## ✔️ Reglas de CSS
+
+- Cada sección de la landing page debe tener `height: 100vh`, aplicada exclusivamente a las secciones principales de contenido, de modo que cada bloque ocupe la altura completa del viewport.
 - **CSS completamente DRY:** variables globales en `:root`, clases utilitarias, componentes modulares, sin repetición de reglas.
 - Usa **selectores claros y específicos**, sin anidamientos innecesarios.
 - Implementa **Flexbox** para layout (alineación, distribución y orden).
 - Aplica metodología **BEM**: `bloque`, `bloque__elemento`, `bloque--modificador`.
 
-### ✔️ Mobile‑First
+---
+
+## ✔️ Mobile‑First
+
 - Estilos base para pantallas pequeñas.
 - Diseño inicial simple y optimizado para móviles.
 - Media queries con `min-width` para tablets y desktops.
 - Construir primero la versión móvil y luego escalar.
 
-### ✔️ Evita antipatrones CSS
+---
+
+## ✔️ Evita antipatrones CSS
+
 - Nada de `!important`.
 - Nada de selectores largos o demasiado específicos.
 - Nada de anidamiento profundo.
@@ -94,7 +117,7 @@ Genera:
 
 ---
 
-### ✔️ ARIA W3C
+## ✔️ ARIA W3C
 
 - Roles ARIA solo cuando HTML semántico no sea suficiente.
 - `aria-label` para elementos interactivos sin texto claro.
@@ -106,12 +129,13 @@ Genera:
 
 ---
 
-## PALETA DE COLORES (minimalista y cálida)
+## PALETA DE COLORES (actualizada)
 
-- #2B2B2B (texto)
-- #FAFAFA (fondo)
-- #FF6F61 (acento cálido)
-- #FFD54F (acento secundario)
+- **Color 1:** #F9F5EB  
+- **Color 2:** #EA5455  
+- **Color 3:** #F07B3F  
+- **Color 4:** #2D4059  
+- **Color 5:** #002B5B
 
 ---
 
@@ -123,28 +147,28 @@ Genera:
    - Enlaces: Inicio, Sobre mí, Trayectoria, Próximas presentaciones
 
 2. **Hero Section**
-   - Título principal
-   - Subtítulo
-   - Botón CTA
+   - Título principal  
+   - Subtítulo  
+   - Botón CTA  
 
 3. **Sobre Mí**
-   - Imagen con alt descriptivo
-   - Texto introductorio
+   - Imagen con alt descriptivo  
+   - Texto introductorio  
 
 4. **Trayectoria**
-   - Grid con 3 eventos artísticos
+   - Grid con 3 eventos artísticos  
 
 5. **Próximas Presentaciones**
-   - Grid con 2 eventos futuros
+   - Grid con 2 eventos futuros  
 
 6. **Contáctame**
-   - Nombre del artista
-   - Email
-   - Teléfono
-   - Localización
+   - Nombre del artista  
+   - Email  
+   - Teléfono  
+   - Localización  
 
 7. **Pie de Página**
-   - Derechos de autor
+   - Derechos de autor  
 
 ---
 

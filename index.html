@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artista | Landing Page Oficial</title>
+    <meta name="description" content="Landing page oficial del artista. Conoce su trayectoria, próximas presentaciones y contáctalos para eventos.">
+    <meta name="keywords" content="artista, música, presentaciones, trayectoria, conciertos, espectáculo">
+    <link rel="canonical" href="https://www.artista.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Artista | Landing Page Oficial">
+    <meta property="og:description" content="Landing page oficial del artista. Conoce su trayectoria, próximas presentaciones y contáctalos para eventos.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.artista.com/">
+    <meta property="og:image" content="https://www.artista.com/assets/og-image.jpg">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Artista | Landing Page Oficial">
+    <meta name="twitter:description" content="Landing page oficial del artista. Conoce su trayectoria, próximas presentaciones y contáctalos para eventos.">
+    <meta name="twitter:image" content="https://www.artista.com/assets/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>">
+
+    <!-- Preload CSS -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nombre del Artista",
+        "description": "Artista musical con trayectoria internacional y presentaciones en vivo.",
+        "url": "https://www.artista.com/",
+        "sameAs": [
+            "https://www.instagram.com/artista",
+            "https://www.facebook.com/artista",
+            "https://www.youtube.com/artista"
+        ],
+        "birthPlace": "Ciudad, País",
+        "nationality": "Nacionalidad"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Navegación Principal -->
+    <nav class="nav" role="navigation" aria-label="navegación principal">
+        <div class="nav__container">
+            <a href="#" class="nav__logo" aria-label="Ir al inicio">Artista</a>
+            <button class="nav__toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+            <ul class="nav__menu" role="list">
+                <li class="nav__item"><a href="#hero" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">Sobre mí</a></li>
+                <li class="nav__item"><a href="#trajectory" class="nav__link">Trayectoria</a></li>
+                <li class="nav__item"><a href="#events" class="nav__link">Próximas presentaciones</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero" aria-label="Sección de bienvenida">
+            <div class="hero__content">
+                <h1 class="hero__title">Nombre del Artista</h1>
+                <p class="hero__subtitle">Música que transforma, ritmo que inspira. Descubre el arte en cada nota.</p>
+                <a href="#contact" class="hero__cta" aria-label="Contratar para evento">Contrátame</a>
+            </div>
+        </section>
+
+        <!-- Sobre Mí -->
+        <section id="about" class="about section" aria-label="Sección sobre mí">
+            <div class="about__container">
+                <h2 class="about__title">Sobre mí</h2>
+                <div class="about__content">
+                    <img src="assets/images/imagen_artista.png" alt="Retrato del artista frente al escenario con iluminación ambiental" class="about__image">
+                    <p class="about__text">Soy un artista apasionado por la música desde temprana edad. Con más de una década de experiencia, he llevado mi talento a escenarios nacionales e internacionales, conectando con audiencias diversas a través de melodías únicas y presentaciones inolvidables.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trayectoria -->
+        <section id="trajectory" class="trajectory section" aria-label="Sección de trayectoria artística">
+            <h2 class="trajectory__title">Trayectoria</h2>
+            <div class="trajectory__grid">
+                <article class="trajectory__card">
+                    <h3 class="trajectory__card-title">Festival Internacional de Música</h3>
+                    <p class="trajectory__card-year">2024</p>
+                    <p class="trajectory__card-desc">Presentación principal ante más de 10,000 asistentes en el escenario central del festival.</p>
+                </article>
+                <article class="trajectory__card">
+                    <h3 class="trajectory__card-title">Gira Nacional "Ritmos del Alma"</h3>
+                    <p class="trajectory__card-year">2023</p>
+                    <p class="trajectory__card-desc">Recorrido por 15 ciudades del país con llenos totales y gran acogida del público.</p>
+                </article>
+                <article class="trajectory__card">
+                    <h3 class="trajectory__card-title">Lanzamiento del Álbum "Esencias"</h3>
+                    <p class="trajectory__card-year">2022</p>
+                    <p class="trajectory__card-desc">Álbum debut con 10 temas originales que alcanzó los primeros lugares en plataformas digitales.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Próximas Presentaciones -->
+        <section id="events" class="events section" aria-label="Sección de próximas presentaciones">
+            <h2 class="events__title">Próximas presentaciones</h2>
+            <div class="events__grid">
+                <article class="events__card">
+                    <h3 class="events__card-title">Teatro Principal</h3>
+                    <p class="events__card-date">15 de agosto de 2026</p>
+                    <p class="events__card-location">Ciudad de México, México</p>
+                </article>
+                <article class="events__card">
+                    <h3 class="events__card-title">Auditorio Nacional</h3>
+                    <p class="events__card-date">22 de septiembre de 2026</p>
+                    <p class="events__card-location">Bogotá, Colombia</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contáctame -->
+        <section id="contact" class="contact section" aria-label="Sección de contacto">
+            <h2 class="contact__title">Contáctame</h2>
+            <div class="contact__info">
+                <p class="contact__name">Nombre del Artista</p>
+                <p class="contact__detail">
+                    <span class="contact__label">Email:</span>
+                    <a href="mailto:artista@ejemplo.com" class="contact__link">artista@ejemplo.com</a>
+                </p>
+                <p class="contact__detail">
+                    <span class="contact__label">Teléfono:</span>
+                    <a href="tel:+525512345678" class="contact__link">+52 55 1234 5678</a>
+                </p>
+                <p class="contact__detail">
+                    <span class="contact__label">Localización:</span>
+                    Ciudad de México, México
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="footer" role="contentinfo">
+        <p class="footer__text">&copy; 2026 Nombre del Artista. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
